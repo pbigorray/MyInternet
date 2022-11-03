@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34B2EC"
+    tools:context=".HubActivity">
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/navegarBoton"
+        android:layout_width="@dimen/tam_boton"
+        android:layout_height="@dimen/tam_boton"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageButton
+        android:id="@+id/mandarBoton"
+        android:layout_width="@dimen/tam_boton"
+        android:layout_height="@dimen/tam_boton"
+        app:layout_constraintEnd_toEndOf="@+id/navegarBoton"
+        app:layout_constraintStart_toStartOf="@+id/navegarBoton"
+        app:layout_constraintTop_toBottomOf="@+id/navegarBoton"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/llamarBoton"
+        android:layout_width="@dimen/tam_boton"
+        android:layout_height="@dimen/tam_boton"
+        app:layout_constraintEnd_toEndOf="@+id/mandarBoton"
+        app:layout_constraintStart_toStartOf="@+id/mandarBoton"
+        app:layout_constraintTop_toBottomOf="@+id/mandarBoton"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <ImageButton
+        android:id="@+id/smsBoton"
+        android:layout_width="@dimen/tam_boton"
+        android:layout_height="@dimen/tam_boton"
+        app:layout_constraintEnd_toEndOf="@+id/llamarBoton"
+        app:layout_constraintStart_toStartOf="@+id/llamarBoton"
+        app:layout_constraintTop_toBottomOf="@+id/llamarBoton"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageButton
+        android:id="@+id/mapaBoton"
+        android:layout_width="@dimen/tam_boton"
+        android:layout_height="@dimen/tam_boton"
+        app:layout_constraintEnd_toEndOf="@+id/fotoBoton"
+        app:layout_constraintStart_toStartOf="@+id/fotoBoton"
+        app:layout_constraintTop_toBottomOf="@+id/fotoBoton"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <ImageButton
+        android:id="@+id/fotoBoton"
+        android:layout_width="@dimen/tam_boton"
+        android:layout_height="@dimen/tam_boton"
+        app:layout_constraintEnd_toEndOf="@+id/alarmaBoton"
+        app:layout_constraintStart_toStartOf="@+id/alarmaBoton"
+        app:layout_constraintTop_toBottomOf="@+id/alarmaBoton"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/alarmaBoton"
+        android:layout_width="@dimen/tam_boton"
+        android:layout_height="@dimen/tam_boton"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/navegarBoton"
+        app:layout_constraintStart_toEndOf="@+id/navegarBoton"
+        app:layout_constraintTop_toTopOf="@+id/navegarBoton"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <EditText
+        android:id="@+id/mandarEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:text="Txt a mandar..."
+        app:layout_constraintBottom_toBottomOf="@+id/smsBoton"
+        app:layout_constraintEnd_toEndOf="@+id/mapaBoton"
+        app:layout_constraintStart_toStartOf="@+id/mapaBoton"
+        app:layout_constraintTop_toBottomOf="@+id/mapaBoton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
